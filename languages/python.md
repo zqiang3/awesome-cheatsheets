@@ -599,3 +599,14 @@ if __name__ == '__main__':
 
 ## 15.4.3 抽象基类
 Container, __contains__(), in运算符
+
+### collections - High-performance container datatypes
+defaultdict, namedtuple, OrderedDict, deque, Counter
+
+```python
+from collections import Counter
+
+L = [1, 2, 3, 1, 5]
+c = Counter(L)
+print c.most_common(1)
+```
