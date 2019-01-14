@@ -597,3 +597,5 @@ if __name__ == '__main__':
   unittest.main()
 ```
 
+## 15.4.3 抽象基类
+Container, __contains__(), in运算符
