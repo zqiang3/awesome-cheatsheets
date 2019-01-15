@@ -602,11 +602,22 @@ Container, __contains__(), in运算符
 
 ### collections - High-performance container datatypes
 defaultdict, namedtuple, OrderedDict, deque, Counter
-
+**Counter**
 ```python
-from collections import Counter
-
 L = [1, 2, 3, 1, 5]
-c = Counter(L)
+D = dict(name='zq', age=12)
+#c = Counter(L)
+#c = Counter(D)
+c = Counter(name='zw', age=10)
+print c
 print c.most_common(1)
+```
+
+**defaultdict**
+```python
+import iterator
+def constant_factory(value):
+    return itertools.repeat(value).next
+
+d = defaultdict(constant_factory('<missing>'))
 ```
